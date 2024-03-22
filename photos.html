@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zigzag Animation</title>
+    <style>
+        body {
+            /* Replace 'bg2.jpg' with the path to your background image */
+            background-image: url(jor.png);
+            background-size: cover;
+            background-attachment: fixed;
+            /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* overflow-x: hidden; /* Hide horizontal overflow */
+            /* overflow-y: auto; Allow vertical overflow with scrollbar */
+        }
+
+        .container {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .photos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjust alignment */
+            margin-bottom: 20px; /* Add margin for spacing */
+        }
+
+        .photo {
+            display: flex;
+            align-items: center;
+        }
+
+        .photo img {
+            height: 200px;
+            width: 300px; /* Adjust image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s, box-shadow 0.5s;
+            margin-right: 10px; /* Add margin for spacing */
+        }
+
+        .photo:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            transition: transform 0.5s;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .photo:hover .description {
+            transform: translateY(0);
+        }
+
+        /* Tilt animation */
+        @keyframes tilt {
+            0% { transform: rotateX(0) rotateY(0); }
+            50% { transform: rotateX(5deg) rotateY(5deg); }
+            100% { transform: rotateX(0) rotateY(0); }
+        }
+
+        .photo:hover {
+            animation: tilt 1s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos-container"> 
+            <div class="photo">
+                <img src="IMG-20220511-WA0179.jpg" alt="Photo 1">
+                <div class="description">light of my life is visually here..&#9829;</div>
+            </div>
+        </div>
+        <div class="photos-container"> 
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="IMG_20220414_035620.jpg" alt="Photo 2">
+                <div class="description">a thiruttu moment in trichy at early morning...</div>
+            </div>
+        </div>
+        <div class="photos-container"> 
+            <div class="photo">
+                <img src="IMG-20220415-WA0005.jpg" alt="Photo 1">
+                <div class="description">morattu pose at mottamaadi at office (blr)...</div>
+            </div>
+        </div>
+        <div class="photos-container"> 
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="20221012_111824.jpg" alt="Photo 2">
+                <div class="description">that valichify moment for ur bujuk bujuk...</div>
+            </div>
+        </div>
+        <div class="photos-container"> 
+       
+           
+        <div class="photos-container"> 
+           <!-- photos -->
+           <div class="photo">
+               <img src="IMG-20220412-WA0010.jpg" alt="Photo 1">
+               <div class="description">epdi sirppa adkaitu nikren paaathiya but one of beautiful click of ours..</div>
+           </div>
+           
+        </div>
+        <div class="photos-container"> 
+          
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="IMG-20220403-WA0017.jpg" alt="Photo 2">
+               <div class="description">that days with matching dress with no koocham for photos and its pose(still think how i do it)..
+               </div>
+           </div>
+        </div>
+        <div class="photos-container"> 
+           <!-- photos -->
+           <div class="photo">
+               <img src="IMG-20220512-WA0093.jpg" alt="Photo 1">
+               <div class="description">funniest but cutest ever click of us di poosanika..</div>
+           </div>
+           
+        </div>
+        <div class="photos-container"> 
+          
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="IMG-20220306-WA0013.jpg" alt="Photo 2">
+               <div class="description">moment of hey sinamika(and u know what happened)then rest is history..
+               </div>
+           </div>
+        </div>
+        <div class="photos-container"> 
+           <!-- photos -->
+           <div class="photo">
+               <img src="IMG-20220410-WA0018.jpg" alt="Photo 1">
+               <div class="description">a phot that we recreated but still this photo cant replaced by any all time fav..</div>
+           </div>
+           
+        </div>
+        <div class="photos-container"> 
+          
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="IMG-20220209-WA0014.jpg" alt="Photo 2">
+               <div class="description">snap days propably before love but with love....
+               </div>
+           </div>
+        </div>
+        <div class="photos-container"> 
+           <!-- photos -->
+           <div class="photo">
+               <img src="smile before love.jpg" alt="Photo 1">
+               <div class="description">gaali class last bench revathi mam uh ore fun aana days and bayandhu bayandhu love panna moments</div>
+           </div>
+           
+        </div>
+        <div class="photos-container"> 
+          
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="veetla m,aatikichiu.jpg" alt="Photo 2">
+               <div class="description">vazhkaila marakaamaten indha photo va panna sambavam apdeee but not only in pose this photo is r4eallyclose to my heart
+               </div>
+           </div>
+        </div>
+        <div class="photo">
+           <img src="IMG-20220603-WA0001.jpg" alt="Photo 1">
+           <div class="description">idhayum marakaa maaten but idhu naa panna ore mistake na idhu thaa theriyathanaamaa story potttu naan patta avastha enaku thaa theriyu</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="kanaadi munaadi.jpg" alt="Photo 2">
+           <div class="description">paruthi mootai godown le irundhuklaam moment idhu illana innaiku edhum illa....unforgettble toilet in my life
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="first bus.jpg" alt="Photo 1">
+           <div class="description">first travel together that day i dontknow that that travel is so long last</div>
+        </divv>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220422_130215.jpg" alt="Photo 2">
+           <div class="description">first attempt eh success uh epdi nadu road la thookna thairiyam la ipo enga nu thaa therila epdiyellam irundhurken paaren
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG_20220423_132807.jpg" alt="Photo 1">
+           <div class="description">look a like most romantical photo but theriyaama click aana ondru anaal perfect matvh on eyes</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220427_160756.jpg" alt="Photo 2">
+           <div class="description">with wednesday uniform haha,andha belt kooda poda theriyaama nee vara naatkal
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG_20220421_180131.jpg" alt="Photo 1">
+           <div class="description">u know that all time fav for me one of best look of us that kankulle kanna paakra moment</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220430_133021.jpg" alt="Photo 2">
+           <div class="description">holding hands after the bite is very cuel deee,but romantic(p.s ungonnan oru paarva paathaan paaru life la marakkamaaten)
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG-20221206-WA0006.jpg" alt="Photo 1">
+           <div class="description">titanic pose nu try panni ennamo pannitu irundha naatkal  @sungam</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220529_120808.jpg" alt="Photo 2">
+           <div class="description">holding hands in some place is very special that moment is this holding hands at alone in devotional place
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG-20220709-WA0006.jpg" alt="Photo 1">
+           <div class="description">selfie at ellar munaadi is not easy thing andha kfc ku nandreee</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220529_122730.jpg" alt="Photo 2">
+           <div class="description">and best outing but not peaceful any way manasukku nimmadhiyaana oru naal
+           </div>
+        </div>
+        <div class="photo">
+           <img src="IMG-20220717-WA0077.jpg" alt="Photo 1">
+           <div class="description">unkitta illadha photo nu nenaikren bcoz nive panna vela apdee but na unna sight la adikala chumma paathen</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="kovai kutalam befor3elove.jpg" alt="Photo 2">
+           <div class="description">before love but this moment has to power that the change of our date just miss by one elumban irundhaalum avlo close ah epdi ninnenu therila 
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG_20220529_151907.jpg" alt="Photo 1">
+           <div class="description">noyal nu kooptun poi pottal kaata kaatniye marakave maaten but fullfilled to feed 2 plate biriyani to u</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220604_140637.jpg" alt="Photo 2">
+           <div class="description">paatu paadikte edutha photo pookale satru oivedunganu but apo thrila adutha naal oru adhichiyaana news varum nu
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG_20220622_162318.jpg" alt="Photo 1">
+           <div class="description">when we turned to paalvaadi couple maanmketta moment</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="siripu pose.jpg" alt="Photo 2">
+           <div class="description">cringest photo ever but cute one 
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="delhi darbar.jpg" alt="Photo 1">
+           <div class="description">dress vaanga poitu size pathaama emaandhu pakathula paavma ukaandhapo edutha photo haha</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220803_145205.jpg" alt="Photo 2">
+           <div class="description">matured one but lovely one
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="IMG_20220803_151348.jpg" alt="Photo 1">
+           <div class="description">holding hands is my happiness but this is on ethnic..</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="sighting u.jpg" alt="Photo 2">
+           <div class="description">selfie edukra gap sight adikum thiramai ullavan dee naa
+           </div>
+        </div>
+        </div>
+        <div class="photos-container"> 
+        <!-- photos -->
+        <div class="photo">
+           <img src="candid smile blr.jpg" alt="Photo 1">
+           <div class="description">best smile of ours but innonu keezha varum adhu thaan best o best</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+        <div class="photo" style="flex-direction: row-reverse;"> 
+            <img src="IMG_20220803_153701.jpg" alt="Photo 2">
+           <div class="description">andha abisek paiyan panna ore urupadiyaana vela indha photo eduthadhu cute ever
+           </div>
+        </div>
+        <div class="photo">
+           <img src="Snapchat-1231913578.jpg" alt="Photo 1">
+           <div class="description">best smile of ours but innonu keezha varum adhu thaan best o best</div>
+        </div>
+        
+        </div>
+        <div class="photos-container"> 
+        
+           <div class="photo" style="flex-direction: row-reverse;"> 
+               <img src="IMG-20220106-WA0024.jpg" alt="Photo 2">
+              <div class="description"> first movie of ours and veryy happy day for that pakathula vandhu ukaandha moment
+              </div>  
+              <div class="photo">
+               <img src="IMG-20211223-WA0122.jpg" alt="Photo 1">
+               <div class="description">i think so first selfie after marudhamalai but closest one unforgettable day which all starts in this eve</div>
+              </div>
+              </div>
+              </div>
+        <div class="container">
+        <div class="photos-container"> 
+            <div class="photo">
+                <img src="IMG-20220106-WA0024.jpg" alt="Photo 1">
+                <div class="description">heart beat day&#9829;</div>
+            </div>
+        </div>
+        <div class="photos-container"> 
+            <div class="photo" style="flex-direction: row-reverse;"> 
+                <img src="Snapchat-846533186.jpg" alt="Photo 2">
+                <div class="description">cute la</div>
+            </div>
+            <div class="container">
+                <div class="photos-container"> 
+                    <div class="photo">
+                        <img src="IMG-20220308-WA0010.jpg" alt="Photo 1">
+                        <div class="description">snap of ours&#9829;</div>
+                    </div>
+                </div>
+                <div class="photos-container"> 
+                    <div class="photo" style="flex-direction: row-reverse;"> 
+                        <img src="IMG-20221206-WA0010.jpg" alt="Photo 2">
+                        <div class="description">vetta velila epdi ipdilaam eduthom onuum purila but tnx to nivijay</div>
+                    </div>
+                    <div class="container">
+                        <div class="photos-container"> 
+                            <div class="photo">
+                                <img src="thookitu nil.jpg" alt="Photo 1">
+                                <div class="description">happiest and romantic one when all stomach burning at a moment&#9829;</div>
+                            </div>
+                        </div>
+                        <div class="photos-container"> 
+                            <div class="photo" style="flex-direction: row-reverse;"> 
+                                <img src="Snapchat-266460302.jpg" alt="Photo 2">
+                                <div class="description">the journey where it starts</div>
+                            </div>
+                            <div class="container">
+                                <div class="photos-container"> 
+                                    <div class="photo">
+                                        <img src="appa outing.jpg" alt="Photo 1">
+                                        <div class="description">endha b day vandhaalum indha photo illama irukaadhu all time best candid of ours and best outing of ours&#9829;</div>
+                                    </div>
+                                </div>
+                                <div class="photos-container"> 
+                                    <div class="photo" style="flex-direction: row-reverse;"> 
+                                        <img src="Snapchat-1757728319.jpg" alt="Photo 2">
+                                        <div class="description">sila phot paakum podhu nee gurl ah theriva adhula onu idhu</div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="photos-container"> 
+                                            <div class="photo">
+                                                <img src="mutti pose alaiyar.jpg" alt="Photo 1">
+                                                <div class="description">nalla iruku laaa&#9829;</div>
+                                            </div>
+                                        </div>
+                                        <div class="photos-container"> 
+                                            <div class="photo" style="flex-direction: row-reverse;"> 
+                                                <img src="Snapchat-194037865.jpg" alt="Photo 2">
+                                                <div class="description">when i click my queen on that aspicious day</div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="photos-container"> 
+                                                    <div class="photo">
+                                                        <img src="heart with hand.jpg" alt="Photo 1">
+                                                        <div class="description">heart on hands&#9829;</div>
+                                                    </div>
+                                                </div>
+                                                <div class="photos-container"> 
+                                                    <div class="photo" style="flex-direction: row-reverse;"> 
+                                                        <img src="20220225_112258.jpg" alt="Photo 2">
+                                                        <div class="description">art << artist</div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <div class="photos-container"> 
+                                                            <div class="photo">
+                                                                <img src="Screenshot_20220318-012751_Snapchat.jpg" alt="Photo 1">
+                                                                <div class="description">pre proposal of u&#9829;</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="photos-container"> 
+                                                            <div class="photo" style="flex-direction: row-reverse;"> 
+                                                                <img src="IMG_20220422_130158.jpg" alt="Photo 2">
+                                                                <div class="description">En nenchoram aval
+                                                                    Minnaaram chiri thookum kannazhakaayi
+                                                                    Kan chimmaathe niram mangaathe
+                                                                    Manam thedum pon kaniyaayi</div>
+                                                            </div>
+                                                            <div class="container">
+                                                                <div class="photos-container"> 
+                                                                    <div class="photo">
+                                                                        <img src="romance on kovil.jpg" alt="Photo 1">
+                                                                        <div class="description">mela sonnen la keezha onnu irukunu adhu idhaan best ever&#9829;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="photos-container"> 
+                                                                    <div class="photo" style="flex-direction: row-reverse;"> 
+                                                                        <img src="night on ilkovai.jpg" alt="Photo 2">
+                                                                        <div class="description">the moment when we know that we gonna seprate but we dontknow we gonna reunite on blr</div>
+                                                                    </div>
+        </div>
+<br><br>
+        <pre><h1>                                     thodarum....</h1></pre><pre></pre>
+
+        
+        <!-- Add more photo containers similarly -->
+        <!-- Continue adding other photo containers as provided -->
+    </div>
+    <!-- audio -->
+    <audio id="audio" autoplay>
+        <source src="Urugi Urugi.mp3" type="audio/mpeg">
+        <source src="Kovai Kulira.mp3" type="audio/mpeg">
+        <source src="Whisper of Hearts.mp3" type="audio/mpeg">
+        <source src="Memories of her.mp3" type="audio/mpeg">
+        <source src="Love of Joe.mp3" type="audio/mpeg">
+        <source src="Joe's Proposal.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        // Function to play random audio
+        function playRandomAudio() {
+            var audio = document.getElementById('audio');
+            var sources = audio.getElementsByTagName('source');
+            var randomIndex = Math.floor(Math.random() * sources.length);
+            audio.src = sources[randomIndex].src;
+            audio.play();
+        }
+
+        // Play random audio when the page loads
+        window.onload = playRandomAudio;
+    </script>
+</body>
+</html>
+
+

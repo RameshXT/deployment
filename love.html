@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Wishes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            background-image: url('tiru4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #d7148c;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .wishes {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .wishes p {
+            font-size: 36px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: 'Great Vibes', cursive; /* Applying the selected font */
+            overflow: hidden; /* Hide overflow to prevent text jump */
+            position: relative; /* Set position relative for ::after pseudo-element */
+            color: transparent; /* Make text transparent initially */
+            animation: revealText 10s forwards; /* Reveal animation */
+        }
+
+        @keyframes revealText {
+            0% {
+                color: transparent; /* Start with transparent text */
+            }
+            10% {
+                color: transparent; /* Keep text transparent for initial delay */
+            }
+            100% {
+                color: #ffd700; /* Dark yellow color */
+            }
+        }
+
+        .wishes p::after {
+            content: ''; /* Empty content */
+            position: absolute; /* Position absolutely */
+            width: 1px; /* Width of cursor */
+            height: 1.1em; /* Height of cursor */
+            background-color: #ffd700; /* Dark yellow color */
+            animation: blink 1s infinite; /* Blinking animation */
+            top: 0;
+            right: 0;
+        }
+
+        @keyframes blink {
+            50% { background-color: transparent; }
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Anniversary!</h1>
+        <nav>
+            <ul>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="wishes">
+            <p>my viji</p>
+            <p>yes we achive some precentage that the thing no one has belived ss, we cross 2 years successfull with lots of fights,arguments with some unconditonal love</p>
+            <p>thank u for adjusting me salichifying me and thanks for supporting me and being me</p>
+            <p>i know that we cant able spent our time life other couples bcoz some commitments and family responsiblities are there but,"one day that day we'll see together and say we done it" i can promise to u i will make that day asap wait untill that</p>
+            <p>Happy anniversary to my "ejamaani" amma!&#9829;
+            </p>
+        </section>
+       
+    </main>
+   
+</body>
+</html>
